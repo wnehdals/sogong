@@ -9,7 +9,21 @@
         android:id="@+id/navigation_home"
         android:name="com.dsm.sogong.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_health"
+            app:destination="@id/navigation_health" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_bus"
+            app:destination="@id/navigation_bus" />
+
+        <action
+            android:id="@+id/action_navigation_home_to_navigaion_child"
+            app:destination="@id/navigaion_child" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_hair3"
+            app:destination="@id/navigation_hair" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -22,4 +36,25 @@
         android:name="com.dsm.sogong.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_health"
+        android:name="com.dsm.sogong.ui.HealthFragment"
+        android:label="@string/health_fragment"
+        tools:layout="@layout/fragment_health"/>
+    <fragment
+        android:id="@+id/navigation_bus"
+        android:name="com.dsm.sogong.ui.BusFragment"
+        tools:layout="@layout/fragment_bus"
+        android:label="@string/bus_fragment"/>
+    <fragment
+        android:id="@+id/navigation_hair"
+        android:name="com.dsm.sogong.ui.HairFragment"
+        android:label="@string/hair_fragment"
+        tools:layout="@layout/fragment_hair"/>
+    <fragment
+        android:id="@+id/navigaion_child"
+        android:name="com.dsm.sogong.ui.ChildFragment"
+        android:label="@string/child_fragment"
+        tools:layout="@layout/fragment_child"/>
+
 </navigation>
