@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.LinearLayout
 import android.widget.MediaController
 import android.widget.TextView
 import androidx.fragment.app.Fragment
@@ -24,13 +25,13 @@ class HomeFragment : Fragment(), View.OnClickListener{
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         root = inflater.inflate(R.layout.fragment_home, container, false)
         navController = activity?.let { Navigation.findNavController(it, R.id.nav_host_fragment) }
-        val hairButton: Button = root.findViewById(R.id.hair_button)
+        val hairButton: LinearLayout = root.findViewById(R.id.hair_button)
         hairButton.setOnClickListener(this)
-        val healthButton: Button = root.findViewById(R.id.health_button)
+        val healthButton: LinearLayout = root.findViewById(R.id.health_button)
         healthButton.setOnClickListener(this)
-        val busButton: Button = root.findViewById(R.id.bus_button)
+        val busButton: LinearLayout = root.findViewById(R.id.bus_button)
         busButton.setOnClickListener(this)
-        val childButton: Button = root.findViewById(R.id.child_button)
+        val childButton: LinearLayout = root.findViewById(R.id.child_button)
         childButton.setOnClickListener(this)
         //hair_button.setOnClickListener(this)
         //bus_button.setOnClickListener(this)

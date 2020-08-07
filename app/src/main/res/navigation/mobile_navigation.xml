@@ -53,7 +53,7 @@
         tools:layout="@layout/fragment_hair"/>
     <fragment
         android:id="@+id/navigaion_child"
-        android:name="com.dsm.sogong.ui.ChildFragment"
+        android:name="com.dsm.sogong.ui.child.ChildFragment"
         android:label="@string/child_fragment"
         tools:layout="@layout/fragment_child"/>
 
